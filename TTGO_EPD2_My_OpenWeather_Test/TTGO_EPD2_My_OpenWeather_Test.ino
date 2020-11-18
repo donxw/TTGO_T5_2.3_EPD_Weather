@@ -73,13 +73,12 @@ U8G2_FOR_ADAFRUIT_GFX u8display;
 //#define TIME_OFFSET -6UL * 3600UL // UTC -6 hour:  Central Time
 //#define TIME_OFFSET 8UL * 3600UL // UTC -6 hour:  China Time
 
-// Change to suit your WiFi router
-//#define WIFI_SSID     "gwifi"
-//#define WIFI_PASSWORD "c4d496c2"
+// Change to suit your WiFi router - not needed since using wifimanager
+//#define WIFI_SSID     "xxx"
+//#define WIFI_PASSWORD "xxx"
 
 // OpenWeather API Details, replace x's with your API key
-//String APIKEY = "d268dda12c36bdc8809a9525f37ab560";  //407keith@gmail
-String api_key = "122c8b5cd4731038ff78486f1faa70c5"; // Obtain this from your OpenWeather account
+String api_key = "xxxxxxxxx"; // Obtain this from your OpenWeather account
 
 // Set both your longitude and latitude to at least 4 decimal places
 //  Hayward  37.67211° N, -122.08396° W
@@ -430,7 +429,7 @@ void drawWeatherSymbolBig(uint8_t x, uint8_t y, uint8_t symbol)
 ***************************************************************************************/
 void printCurrentWeather()
 {
-  // Create the structures that hold the retrieved weather
+  // Create the structures that hold the retrieved weather - move to Global
   //OW_current *current = new OW_current;
   //OW_hourly *hourly = new OW_hourly;
   //OW_daily  *daily = new OW_daily;
@@ -440,7 +439,7 @@ void printCurrentWeather()
   Serial.print("\nRequesting weather information from OpenWeather... ");
 
   ow.getForecast(current, hourly, daily, api_key, latitude, longitude, units, language);
-
+  // Uncomment to see full weather info in the Serial window
   /**
     Serial.println("Weather from Open Weather\n");
 
@@ -542,7 +541,7 @@ void printCurrentWeather()
 
     }**/
 
-  // Delete to free up space and prevent fragmentation as strings change in length
+  // Delete to free up space and prevent fragmentation as strings change in length - moved to end of setup() so I can used the data before it is deleted.
   //delete current;
   //delete hourly;
   //delete daily;
