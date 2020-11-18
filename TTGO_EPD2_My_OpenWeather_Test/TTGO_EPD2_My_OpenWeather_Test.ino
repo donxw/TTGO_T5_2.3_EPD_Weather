@@ -96,11 +96,11 @@ String api_key = "xxxxxxxxx"; // Obtain this from your OpenWeather account
 //String latitude =  "37.67211"; // 90.0000 to -90.0000 negative for Southern hemisphere
 //String longitude = "-122.08396"; // 180.000 to -180.000 negative for West
 
-//String location = "407 Keith St";
+//String location = "Norman";
 //String latitude =  "35.2226"; // 90.0000 to -90.0000 negative for Southern hemisphere
 //String longitude = "-97.4395"; // 180.000 to -180.000 negative for West
 
-String location = "London UK";
+String location = "London";
 String latitude =  "51.5074"; // 90.0000 to -90.0000 negative for Southern hemisphere
 String longitude = "0.1278"; // 180.000 to -180.000 negative for West
 
