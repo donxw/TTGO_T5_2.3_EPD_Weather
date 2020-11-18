@@ -15,7 +15,9 @@
 // Author: Jean-Marc Zingg
 
 // Board:  ESP32 Dev Module
-// This version optimizes for battery life by putting the ESP to deep sleep between weather updates.  Therefore, no clock is shown since it would update only every 15 min.
+// This version optimizes for battery life by putting the ESP to deep sleep between weather updates.  Loop() is never run.  
+// Once setup() is complete, the ESP32 goes to sleep for 15 min then wakes and runs setup() again.  
+// The blue power LED stays on even in deep sleep, so power consumption is not a low as it can be.
 
 // Choose library to load
 #ifdef ESP8266
