@@ -5,6 +5,7 @@ Adapts Bodmer OpenWeather example for use on the TTGO T5 EPD ESP32 Dev Board
 # Libraries used:
 * https://github.com/ZinggJM/GxEPD2
 * https://github.com/Bodmer/OpenWeather
+* https://github.com/tzapu/WiFiManager
 
 # Hardware used:
 * LILYGO® TTGO T5 V2.0 WiFi Wireless Module bluetooth Base ESP-32 ESP32 2.13 e-Paper Display Development Board
