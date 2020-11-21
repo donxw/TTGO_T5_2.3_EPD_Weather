@@ -1,1 +1,1 @@
-gwifi-guest
+yourssid
