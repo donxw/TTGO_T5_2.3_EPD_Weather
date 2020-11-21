@@ -34,6 +34,8 @@ Code will run for days without hanging if using wifi.begin and credential values
 
 Case for TTGO T5 is modified from a nice case found on Thingiverse.  The original has a very nice snap fit, but is lacking an SD card slot and buttons to activate the build in buttons on the TTGO T5 devboard.  The modified works, but is not a smooth snapping.  Investigation needed.
 
+TZCode.txt can be ignored.  It is used in another version with an NTP clock displayed with the weather.
+
 # Case for TTGO T5 2.13EPD
 ![OpenweatherTTGO_in_case (Small)](https://user-images.githubusercontent.com/31633408/99886177-67961800-2bef-11eb-90a1-991a03e8c340.jpeg)
 
