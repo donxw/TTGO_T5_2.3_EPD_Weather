@@ -92,13 +92,12 @@ U8G2_FOR_ADAFRUIT_GFX u8display;
 //#define TIME_OFFSET -6UL * 3600UL // UTC -6 hour:  Central Time
 //#define TIME_OFFSET 8UL * 3600UL // UTC -6 hour:  China Time
 
-// Change to suit your WiFi router
-//#define WIFI_SSID     "gwifi"
-//#define WIFI_PASSWORD "c4d496c2"
+// Change to suit your WiFi router - info now read in from SD Card
+//#define WIFI_SSID     "xxxx"
+//#define WIFI_PASSWORD "xxxxxxxx"
 
 // OpenWeather API Details, replace x's with your API key
-//String APIKEY = "d268dda12c36bdc8809a9525f37ab560";  //407keith@gmail
-String api_key = "122c8b5cd4731038ff78486f1faa70c5"; // Obtain this from your OpenWeather account
+String api_key = "xxxxxxxxxxxxxxxxxxxxxxxxx"; // Obtain this from your OpenWeather account
 
 // Set both your longitude and latitude to at least 4 decimal places
 //  Hayward  37.67211° N, -122.08396° W
@@ -417,9 +416,11 @@ void setup() {
     // Set flag to read credentials from EEPROM next time
     //useEEPROM = 0;  //flag to read from eeprom
 
-    //Write values to EEPROM for next boot
+    //Write values to EEPROM for next boot - not used
     //EEPROM.write(useEEPROMAddress, useEEPROM);
     //EEPROM.commit();
+    
+    /*  // uncomment to confirm EEPROM written values to Serial Port
 
     //Read SSID from EEPROM
     strSSID = read_String(SSIDAddress);
@@ -444,6 +445,8 @@ void setup() {
     //Read Units from EEPROM
     String strUnits = read_String(UnitsAddress);
     Serial.print("EEPROM Units: "); Serial.println(strUnits);
+    
+    */
 
     //*************************** Start Wifi ***************************************************************************************************************************
     Serial.println("starting wifi from SD card values");
