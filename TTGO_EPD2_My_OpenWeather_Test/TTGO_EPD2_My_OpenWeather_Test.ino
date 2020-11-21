@@ -26,18 +26,17 @@
 #endif
 
 //needed for wifi autoconnect
+/*
 #include <DNSServer.h>
-
 #if defined(ESP8266)
 #include <ESP8266WebServer.h>
 #else
 #include <WebServer.h>
 #endif
-
-//#include <WiFiManager.h>
+#include <WiFiManager.h>
+*/
 
 #include <JSON_Decoder.h>
-
 #include <OpenWeather.h>
 
 // Deep Sleep Settings
@@ -156,7 +155,7 @@ void setup() {
   u8display.setForegroundColor(fg);         // apply Adafruit GFX color
   u8display.setBackgroundColor(bg);         // apply Adafruit GFX color
 
-  // connect wifi using wifiManager
+  // connect wifi using wifiManager - not reliable on wake from deep sleep - not sure why...
   //  WiFiManager wifiManager;
   //  wifiManager.autoConnect("WeatherAP");
 
