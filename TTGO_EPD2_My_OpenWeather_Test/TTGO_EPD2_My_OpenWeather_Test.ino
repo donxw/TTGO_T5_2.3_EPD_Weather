@@ -73,12 +73,11 @@ U8G2_FOR_ADAFRUIT_GFX u8display;
 //#define TIME_OFFSET 8UL * 3600UL // UTC -6 hour:  China Time
 
 // Change to suit your WiFi router
-#define WIFI_SSID     "gwifi"
-#define WIFI_PASSWORD "c4d496c2"
+#define WIFI_SSID     "xxxx"
+#define WIFI_PASSWORD "xxxxxxxx"
 
 // OpenWeather API Details, replace x's with your API key
-//String APIKEY = "d268dda12c36bdc8809a9525f37ab560";  //407keith@gmail
-String api_key = "122c8b5cd4731038ff78486f1faa70c5"; // Obtain this from your OpenWeather account
+String api_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"; // Obtain this from your OpenWeather account
 
 // Set both your longitude and latitude to at least 4 decimal places
 //  Hayward  37.67211° N, -122.08396° W
