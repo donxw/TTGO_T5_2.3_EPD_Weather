@@ -12,3 +12,7 @@ Adapts Bodmer OpenWeather example for use on the TTGO T5 EPD ESP32 Dev Board
 # Hardware used:
 * LILYGO® TTGO T5 V2.0 WiFi Wireless Module bluetooth Base ESP-32 ESP32 2.13 e-Paper Display Development Board
 * https://www.banggood.com/LILYGO-TTGO-T5-V2_0-WiFi-Wireless-Module-bluetooth-Base-ESP-32-ESP32-2_13-e-Paper-Display-Development-Board-p-1332909.html?rmmds=search&cur_warehouse=CN
+
+
+# Case for TTGO T5 2.13EPD
+![OpenweatherTTGO_in_case (Small)](https://user-images.githubusercontent.com/31633408/99886177-67961800-2bef-11eb-90a1-991a03e8c340.jpeg)
